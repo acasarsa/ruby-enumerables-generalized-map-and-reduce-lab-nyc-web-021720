@@ -20,7 +20,7 @@ def reduce(array, sv=nil) # make it nil so that it's totally optional and will w
 #now we loop over our array to return the sum of these values
   while i < array.size
     sum = yield(sum, array[i])
-    i += 1 # we want to send num1 and each element of the array into the block
+    i += 1 # we want to send sum and each element of the array into the block
   end
   sum
 end
